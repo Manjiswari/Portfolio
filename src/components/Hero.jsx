@@ -9,7 +9,7 @@ export default function Hero() {
           <p className="font-handwritten text-sm uppercase tracking-widest text-ink">AI / ML Engineer & CS Student</p>
         </div>
         <h1 className="font-handwritten text-5xl md:text-7xl font-bold leading-tight mb-4">
-          Hi, I&apos;m <span className="text-accent underline decoration-wavy decoration-mint">Manjiswari Jajula</span> 🌸
+          Hi, I&apos;m <span className="text-accent underline decoration-wavy decoration-mint">Manjiswari Jajula</span> 
         </h1>
         <p className="text-lg md:text-xl text-ink-light leading-relaxed max-w-2xl bg-white p-4 doodle-border shadow-[4px_4px_0_0_#ccc] mb-8 transform -rotate-1">
           I build intelligent, data-driven systems using Machine Learning, NLP, LLMs,
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
 
         <div className="inline-block px-4 py-2 tape-top mt-4 bg-white doodle-border transform rotate-1">
-          <p className="font-handwritten text-ink-light">B.Tech CSE (AI & ML) · VIT-AP · CGPA 9.18/10</p>
+          <p className="font-handwritten text-ink-light">B.Tech CSE (AI & ML) · VIT-AP · CGPA 9.22/10</p>
         </div>
       </div>
 
