@@ -93,7 +93,7 @@ export const skillGroups = [
 ]
 
 export const achievementCards = [
-  { value: '9.18 / 10', label: 'Current CGPA', detail: 'B.Tech CSE — AI & ML' },
+  { value: '9.22 / 10', label: 'Current CGPA', detail: 'B.Tech CSE — AI & ML' },
   { value: '400+', label: 'LeetCode Problems', detail: 'Consistent DSA practice' },
   { value: '#84', label: 'VIT Top Coders', detail: 'Top 100 placement in the competition' },
   { value: 'District Topper', label: 'NTR District', detail: 'Government Junior College students — Intermediate' }
