@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fdfaf6;
+  --color-paper-dark: #f5eedf;
+  --color-blush: #fce4e4;
+  --color-blush-dark: #f8caca;
+  --color-lavender: #e6e6fa;
+  --color-mint: #e2f5e2;
+  --color-sage: #c1d5c1;
+  --color-yellow-soft: #fffde7;
+  --color-ink: #333333;
+  --color-ink-light: #555555;
+  --color-accent: #ff8fab;
+
+  --font-handwritten: "Kalam", "Patrick Hand", "Comic Sans MS", cursive;
+  --font-body: "Quicksand", "Nunito", sans-serif;
+
+  --animate-wobble: wobble 3s ease-in-out infinite;
+  --animate-float: float 4s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom utilities for doodle elements */
+@layer utilities {
+  .doodle-border {
+    border: 2px solid var(--color-ink);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  }
+  
+  .doodle-shadow {
+    box-shadow: 4px 4px 0 0 var(--color-ink);
+  }
+
+  .tape-top {
+    position: relative;
+  }
+  
+  .tape-top::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 60px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+}
