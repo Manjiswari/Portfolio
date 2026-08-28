@@ -106,7 +106,7 @@ const education = [
     school: 'Vellore Institute of Technology, Amaravati',
     degree: 'B.Tech — Computer Science & Engineering (AI & ML)',
     period: '2023 — 2027',
-    note: 'CGPA: 9.18 / 10'
+    note: 'CGPA: 9.22 / 10'
   },
   {
     school: 'Government Junior College, Vijayawada',
